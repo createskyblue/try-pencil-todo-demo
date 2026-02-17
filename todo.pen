@@ -1,0 +1,973 @@
+{
+  "version": "2.8",
+  "children": [
+    {
+      "type": "frame",
+      "id": "bi8Au",
+      "x": -139,
+      "y": -55,
+      "name": "Frame",
+      "clip": true,
+      "width": 817,
+      "height": 1121,
+      "fill": "#FFFFFF",
+      "layout": "none"
+    },
+    {
+      "type": "frame",
+      "id": "4Yroj",
+      "x": 0,
+      "y": 0,
+      "name": "Todo App",
+      "clip": true,
+      "width": 420,
+      "fill": "#FFFFFF",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "aQNUj",
+          "name": "header",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 8,
+          "padding": [
+            32,
+            24,
+            24,
+            24
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "CB7k4",
+              "name": "title",
+              "fill": "#1A1A1A",
+              "content": "我的任务",
+              "fontFamily": "Bricolage Grotesque",
+              "fontSize": 32,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "uAdk2",
+              "name": "subtitle",
+              "fill": "#6B7280",
+              "content": "今天你有 5 个任务",
+              "fontFamily": "DM Sans",
+              "fontSize": 15,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "5Dj45",
+              "name": "searchBar",
+              "width": "fill_container",
+              "height": 52,
+              "fill": "#F6F7F8",
+              "cornerRadius": 26,
+              "gap": 12,
+              "padding": [
+                0,
+                18
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon_font",
+                  "id": "IIwf8",
+                  "name": "searchIcon",
+                  "width": 18,
+                  "height": 18,
+                  "iconFontName": "search",
+                  "iconFontFamily": "lucide",
+                  "fill": "#9CA3AF"
+                },
+                {
+                  "type": "text",
+                  "id": "SLnNq",
+                  "name": "searchPlaceholder",
+                  "fill": "#9CA3AF",
+                  "content": "搜索任务...",
+                  "fontFamily": "DM Sans",
+                  "fontSize": 15,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "ZnSLR",
+          "name": "tabs",
+          "width": "fill_container",
+          "height": 44,
+          "fill": "#F3F4F6",
+          "cornerRadius": 22,
+          "gap": 4,
+          "padding": 4,
+          "children": [
+            {
+              "type": "frame",
+              "id": "KPXg8",
+              "name": "tab1",
+              "width": "fill_container",
+              "height": "fill_container",
+              "fill": "#FFFFFF",
+              "cornerRadius": 18,
+              "layout": "vertical",
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "T8xrB",
+                  "name": "tab1Label",
+                  "fill": "#1A1A1A",
+                  "content": "全部",
+                  "fontFamily": "DM Sans",
+                  "fontSize": 13,
+                  "fontWeight": "600"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "75Hk3",
+              "name": "tab2",
+              "width": "fill_container",
+              "height": "fill_container",
+              "layout": "vertical",
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "2eP6n",
+                  "name": "tab2Label",
+                  "fill": "#9CA3AF",
+                  "content": "进行中",
+                  "fontFamily": "DM Sans",
+                  "fontSize": 13,
+                  "fontWeight": "500"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "EsOqx",
+              "name": "tab3",
+              "width": "fill_container",
+              "height": "fill_container",
+              "layout": "vertical",
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "Z9SNU",
+                  "name": "tab3Label",
+                  "fill": "#9CA3AF",
+                  "content": "已完成",
+                  "fontFamily": "DM Sans",
+                  "fontSize": 13,
+                  "fontWeight": "500"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "hynN4",
+          "name": "taskSection",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 16,
+          "padding": 24,
+          "children": [
+            {
+              "type": "frame",
+              "id": "RVFDr",
+              "name": "sectionHeader",
+              "width": "fill_container",
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "SkCmk",
+                  "name": "sectionTitle",
+                  "fill": "#1A1A1A",
+                  "content": "今天",
+                  "fontFamily": "Bricolage Grotesque",
+                  "fontSize": 18,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "frame",
+                  "id": "c5ce5",
+                  "name": "addBtn",
+                  "fill": "#FF6B6B",
+                  "cornerRadius": 20,
+                  "gap": 6,
+                  "padding": [
+                    8,
+                    14
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "wXgZM",
+                      "name": "addIcon",
+                      "width": 14,
+                      "height": 14,
+                      "iconFontName": "plus",
+                      "iconFontFamily": "lucide",
+                      "fill": "#FFFFFF"
+                    },
+                    {
+                      "type": "text",
+                      "id": "oUWTj",
+                      "name": "addLabel",
+                      "fill": "#FFFFFF",
+                      "content": "添加任务",
+                      "fontFamily": "DM Sans",
+                      "fontSize": 12,
+                      "fontWeight": "600"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "529Nl",
+              "name": "task1",
+              "width": "fill_container",
+              "fill": "#F6F7F8",
+              "cornerRadius": 16,
+              "gap": 12,
+              "padding": 16,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "KxOfp",
+                  "name": "check1",
+                  "width": 24,
+                  "height": 24,
+                  "fill": "#22C55E",
+                  "cornerRadius": 12,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "F4Yid",
+                      "name": "checkIcon1",
+                      "width": 14,
+                      "height": 14,
+                      "iconFontName": "check",
+                      "iconFontFamily": "lucide",
+                      "fill": "#FFFFFF"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "QuFRh",
+                  "name": "task1Content",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 2,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "mkoMW",
+                      "name": "task1Title",
+                      "fill": "#9CA3AF",
+                      "content": "晨练",
+                      "fontFamily": "DM Sans",
+                      "fontSize": 15,
+                      "fontWeight": "500"
+                    },
+                    {
+                      "type": "text",
+                      "id": "0cZWX",
+                      "name": "task1Meta",
+                      "fill": "#9CA3AF",
+                      "content": "7:00 • 健康",
+                      "fontFamily": "DM Sans",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "QjzxP",
+              "name": "task2",
+              "width": "fill_container",
+              "fill": "#FFFBEB",
+              "cornerRadius": 16,
+              "stroke": {
+                "thickness": 1,
+                "fill": "#FCD34D"
+              },
+              "gap": 12,
+              "padding": 16,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "KObsz",
+                  "name": "check2",
+                  "width": 24,
+                  "height": 24,
+                  "fill": "none",
+                  "cornerRadius": 12,
+                  "stroke": {
+                    "thickness": 3,
+                    "fill": "#FCD34D"
+                  }
+                },
+                {
+                  "type": "frame",
+                  "id": "i6Ql7",
+                  "name": "task2Content",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 2,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "kcN6S",
+                      "name": "task2Title",
+                      "fill": "#1A1A1A",
+                      "content": "设计评审会议",
+                      "fontFamily": "DM Sans",
+                      "fontSize": 15,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "sLMmu",
+                      "name": "task2Meta",
+                      "fill": "#6B7280",
+                      "content": "10:00 • 工作",
+                      "fontFamily": "DM Sans",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "o2yFj",
+                  "name": "badge2",
+                  "fill": "#FCD34D",
+                  "cornerRadius": 10,
+                  "padding": [
+                    4,
+                    10
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "TVjSx",
+                      "name": "badge2Text",
+                      "fill": "#1A1A1A",
+                      "content": "进行中",
+                      "fontFamily": "DM Sans",
+                      "fontSize": 11,
+                      "fontWeight": "600"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "a2fe5",
+              "name": "task3",
+              "width": "fill_container",
+              "fill": "#F6F7F8",
+              "cornerRadius": 16,
+              "gap": 12,
+              "padding": 16,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "A1yiy",
+                  "name": "check3",
+                  "width": 24,
+                  "height": 24,
+                  "fill": "none",
+                  "cornerRadius": 12,
+                  "stroke": {
+                    "thickness": 2,
+                    "fill": "#E5E7EB"
+                  }
+                },
+                {
+                  "type": "frame",
+                  "id": "BwhQe",
+                  "name": "task3Content",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 2,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "tmEkK",
+                      "name": "task3Title",
+                      "fill": "#1A1A1A",
+                      "content": "购买日用品",
+                      "fontFamily": "DM Sans",
+                      "fontSize": 15,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "PniuG",
+                      "name": "task3Meta",
+                      "fill": "#6B7280",
+                      "content": "14:00 • 生活",
+                      "fontFamily": "DM Sans",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "0x7Oa",
+              "name": "task4",
+              "width": "fill_container",
+              "fill": "#F6F7F8",
+              "cornerRadius": 16,
+              "gap": 12,
+              "padding": 16,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "gt8m9",
+                  "name": "check4",
+                  "width": 24,
+                  "height": 24,
+                  "fill": "none",
+                  "cornerRadius": 12,
+                  "stroke": {
+                    "thickness": 2,
+                    "fill": "#E5E7EB"
+                  }
+                },
+                {
+                  "type": "frame",
+                  "id": "nTkUh",
+                  "name": "task4Content",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 2,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "Olpui",
+                      "name": "task4Title",
+                      "fill": "#1A1A1A",
+                      "content": "阅读30分钟",
+                      "fontFamily": "DM Sans",
+                      "fontSize": 15,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "m7b1F",
+                      "name": "task4Meta",
+                      "fill": "#6B7280",
+                      "content": "晚上 • 自我提升",
+                      "fontFamily": "DM Sans",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "oy8go",
+              "name": "task5",
+              "width": "fill_container",
+              "fill": "#F6F7F8",
+              "cornerRadius": 16,
+              "gap": 12,
+              "padding": 16,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "Kf4ot",
+                  "name": "check5",
+                  "width": 24,
+                  "height": 24,
+                  "fill": "none",
+                  "cornerRadius": 12,
+                  "stroke": {
+                    "thickness": 2,
+                    "fill": "#E5E7EB"
+                  }
+                },
+                {
+                  "type": "frame",
+                  "id": "04RLf",
+                  "name": "task5Content",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 2,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "COXJr",
+                      "name": "task5Title",
+                      "fill": "#1A1A1A",
+                      "content": "完成项目方案",
+                      "fontFamily": "DM Sans",
+                      "fontSize": 15,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "aH25J",
+                      "name": "task5Meta",
+                      "fill": "#6B7280",
+                      "content": "明天截止 • 工作",
+                      "fontFamily": "DM Sans",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "CnT4d",
+                  "name": "badge5",
+                  "fill": "#FF6B6B",
+                  "cornerRadius": 10,
+                  "padding": [
+                    4,
+                    10
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "8e8h4",
+                      "name": "badge5Text",
+                      "fill": "#FFFFFF",
+                      "content": "重要",
+                      "fontFamily": "DM Sans",
+                      "fontSize": 11,
+                      "fontWeight": "600"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "Z1ajA",
+          "name": "weekSection",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 16,
+          "padding": [
+            0,
+            24,
+            32,
+            24
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "JPJxk",
+              "name": "weekHeader",
+              "width": "fill_container",
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "3HZZ2",
+                  "name": "weekTitle",
+                  "fill": "#1A1A1A",
+                  "content": "本周进度",
+                  "fontFamily": "Bricolage Grotesque",
+                  "fontSize": 18,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "frame",
+                  "id": "KsiEh",
+                  "name": "progressBadge",
+                  "fill": "#F0F5FF",
+                  "cornerRadius": 12,
+                  "padding": [
+                    6,
+                    12
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "GHhrX",
+                      "name": "progressBadgeText",
+                      "fill": "#6366F1",
+                      "content": "完成度 71%",
+                      "fontFamily": "DM Sans",
+                      "fontSize": 12,
+                      "fontWeight": "600"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "lzlsn",
+              "name": "weekCard",
+              "width": "fill_container",
+              "fill": "#F6F7F8",
+              "cornerRadius": 20,
+              "padding": 20,
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "LNHlc",
+                  "name": "day1",
+                  "layout": "vertical",
+                  "gap": 8,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "B1k3u",
+                      "name": "dayCircle1",
+                      "width": 36,
+                      "height": 36,
+                      "fill": "#22C55E",
+                      "cornerRadius": 18,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "2VUPJ",
+                          "name": "dayCheck1",
+                          "width": 16,
+                          "height": 16,
+                          "iconFontName": "check",
+                          "iconFontFamily": "lucide",
+                          "fill": "#FFFFFF"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "CKOQr",
+                      "name": "dayLabel1",
+                      "fill": "#9CA3AF",
+                      "content": "一",
+                      "fontFamily": "DM Sans",
+                      "fontSize": 12,
+                      "fontWeight": "600"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "YQHPY",
+                  "name": "day2",
+                  "layout": "vertical",
+                  "gap": 8,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "5Yvrr",
+                      "name": "dayCircle2",
+                      "width": 36,
+                      "height": 36,
+                      "fill": "#22C55E",
+                      "cornerRadius": 18,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "vqZXw",
+                          "name": "dayCheck2",
+                          "width": 16,
+                          "height": 16,
+                          "iconFontName": "check",
+                          "iconFontFamily": "lucide",
+                          "fill": "#FFFFFF"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "k27on",
+                      "name": "dayLabel2",
+                      "fill": "#9CA3AF",
+                      "content": "二",
+                      "fontFamily": "DM Sans",
+                      "fontSize": 12,
+                      "fontWeight": "600"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "5vdcV",
+                  "name": "day3",
+                  "layout": "vertical",
+                  "gap": 8,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "3ritS",
+                      "name": "dayCircle3",
+                      "width": 36,
+                      "height": 36,
+                      "fill": "#22C55E",
+                      "cornerRadius": 18,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "oGmTx",
+                          "name": "dayCheck3",
+                          "width": 16,
+                          "height": 16,
+                          "iconFontName": "check",
+                          "iconFontFamily": "lucide",
+                          "fill": "#FFFFFF"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "UNzEq",
+                      "name": "dayLabel3",
+                      "fill": "#9CA3AF",
+                      "content": "三",
+                      "fontFamily": "DM Sans",
+                      "fontSize": 12,
+                      "fontWeight": "600"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "b2erH",
+                  "name": "day4",
+                  "layout": "vertical",
+                  "gap": 8,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "ykKlZ",
+                      "name": "dayCircle4",
+                      "width": 36,
+                      "height": 36,
+                      "fill": "#FCD34D",
+                      "cornerRadius": 18,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "iaft4",
+                          "name": "dayLabel4Text",
+                          "fill": "#FFFFFF",
+                          "content": "~",
+                          "fontFamily": "DM Sans",
+                          "fontSize": 16,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "nE5O6",
+                      "name": "dayLabel4",
+                      "fill": "#1A1A1A",
+                      "content": "四",
+                      "fontFamily": "DM Sans",
+                      "fontSize": 12,
+                      "fontWeight": "700"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "pWg7J",
+                  "name": "day5",
+                  "layout": "vertical",
+                  "gap": 8,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "Gytm9",
+                      "name": "dayCircle5",
+                      "width": 36,
+                      "height": 36,
+                      "fill": "#FF6B6B",
+                      "cornerRadius": 18,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "riMKA",
+                          "name": "dayLabel5Text",
+                          "fill": "#FFFFFF",
+                          "content": "5",
+                          "fontFamily": "DM Sans",
+                          "fontSize": 16,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "RxIP1",
+                      "name": "dayLabel5",
+                      "fill": "#FF6B6B",
+                      "content": "五",
+                      "fontFamily": "DM Sans",
+                      "fontSize": 12,
+                      "fontWeight": "700"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "buju2",
+                  "name": "day6",
+                  "layout": "vertical",
+                  "gap": 8,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "2GeJk",
+                      "name": "dayCircle6",
+                      "width": 36,
+                      "height": 36,
+                      "fill": "none",
+                      "cornerRadius": 18,
+                      "stroke": {
+                        "thickness": 2,
+                        "fill": "#E5E7EB"
+                      },
+                      "layout": "vertical",
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "kLK2e",
+                          "name": "dayLabel6Text",
+                          "fill": "#9CA3AF",
+                          "content": "6",
+                          "fontFamily": "DM Sans",
+                          "fontSize": 16,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "ZfdPV",
+                      "name": "dayLabel6",
+                      "fill": "#9CA3AF",
+                      "content": "六",
+                      "fontFamily": "DM Sans",
+                      "fontSize": 12,
+                      "fontWeight": "600"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "VnYTR",
+                  "name": "day7",
+                  "layout": "vertical",
+                  "gap": 8,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "5Iyrr",
+                      "name": "dayCircle7",
+                      "width": 36,
+                      "height": 36,
+                      "fill": "none",
+                      "cornerRadius": 18,
+                      "stroke": {
+                        "thickness": 2,
+                        "fill": "#E5E7EB"
+                      },
+                      "layout": "vertical",
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "uobCT",
+                          "name": "dayLabel7Text",
+                          "fill": "#9CA3AF",
+                          "content": "7",
+                          "fontFamily": "DM Sans",
+                          "fontSize": 16,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "SxtMP",
+                      "name": "dayLabel7",
+                      "fill": "#9CA3AF",
+                      "content": "日",
+                      "fontFamily": "DM Sans",
+                      "fontSize": 12,
+                      "fontWeight": "600"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
