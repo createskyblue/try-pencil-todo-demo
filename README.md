@@ -16,6 +16,45 @@
 
 总体来说，对于 UI 界面类的生成任务，Pencil MCP 配合适当的模型可以显著提升开发效率。
 
+## 🚀 如何使用 Pencil.dev 构建项目
+
+![Pencil.dev 首页](./img/PixPin_2026-02-17_12-11-33.png)
+
+以下是使用 Pencil.dev 从零开始构建本项目的完整流程：
+
+### 第一步：安装 Pencil.dev
+
+访问 [pencil.dev](https://pencil.dev) 下载并安装 Pencil。安装完成后，它会自动为你添加一个 **Claude MCP** 插件。
+
+### 第二步：配置第三方模型接入
+
+1. 打开 Pencil.dev 界面
+2. 在设置中选择 **"使用 Claude 第三方模型接入"**
+3. 准备好你的国产模型 API Key 或 Claude 中转站服务
+
+### 第三步：配置 Claude Code
+
+1. 打开 Claude Code
+2. 在配置文件中设置你的国产模型（如 GLM、DeepSeek 等）或 Claude 中转站
+3. 确保 Pencil MCP 已正确连接
+
+### 第四步：在 Pencil 中设计界面
+
+1. 回到 Pencil 界面
+2. 通过**自然语言对话**描述你想要的界面，例如："帮我做一个 Todo App，要有搜索、筛选、任务管理功能"
+3. Pencil 会自动生成界面设计
+4. 你可以继续通过对话或手动修改来优化设计，直到满意为止
+5. 保存项目，导出为 `*.pen` 设计源文件
+
+### 第五步：使用 Pencil MCP 生成代码
+
+1. 回到 Claude Code
+2. 告诉 Claude："使用 Next.js + Tailwind CSS，把 `todo.pen` 源文件用 Pencil MCP 转换成前端界面"
+3. Claude 会调用 Pencil MCP 读取设计文件并生成对应的前端代码
+4. 根据需要调整和完善代码
+
+就这么简单！🎉
+
 ## 功能特性
 
 - ✅ **任务管理**: 添加、编辑、删除任务
