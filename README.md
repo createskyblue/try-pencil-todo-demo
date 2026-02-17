@@ -2,6 +2,10 @@
 
 一个美观现代的任务管理应用，使用 Next.js 14 + Tailwind CSS 构建。
 
+## 🎸 界面预览
+
+![Todo App 截图](./img/PixPin_2026-02-17_12-00-20.png)
+
 ## 💭 关于 Pencil MCP 的使用体验
 
 本项目使用 **GLM 4.7** 模型接入 Pencil MCP 进行开发。
